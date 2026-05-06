@@ -247,6 +247,11 @@ function resetToUpload() {
   fileInput.value = '';
   // Deselect sidebar items
   document.querySelectorAll('.doc-item.active').forEach(el => el.classList.remove('active'));
+  // Close sidebar on mobile
+  if (window.innerWidth <= 768) {
+    document.querySelector('.sidebar').classList.remove('open');
+    document.querySelector('.sidebar').classList.add('collapsed');
+  }
 }
 
 // ===== SIDEBAR DOCUMENTS =====
@@ -319,6 +324,11 @@ async function loadDocument(docId) {
     }
     // Highlight sidebar
     document.querySelectorAll('.doc-item').forEach(el => el.classList.toggle('active', el.dataset.id === docId));
+    // Close sidebar on mobile
+    if (window.innerWidth <= 768) {
+      document.querySelector('.sidebar').classList.remove('open');
+      document.querySelector('.sidebar').classList.add('collapsed');
+    }
     hideLoading();
   } catch (err) {
     hideLoading();
@@ -430,9 +440,14 @@ $('summaryToggle').addEventListener('click', () => {
 
 // ===== SIDEBAR TOGGLE =====
 $('sidebarToggle').addEventListener('click', () => {
-  const sidebar = $('sidebar');
-  sidebar.classList.toggle('collapsed');
-  sidebar.classList.toggle('open');
+  const sidebar = document.querySelector('.sidebar');
+  if (window.innerWidth <= 768) {
+    sidebar.classList.toggle('open');
+    sidebar.classList.remove('collapsed');
+  } else {
+    sidebar.classList.toggle('collapsed');
+    sidebar.classList.remove('open');
+  }
 });
 
 // ===== HELPERS =====
