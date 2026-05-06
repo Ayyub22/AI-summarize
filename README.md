@@ -9,17 +9,17 @@
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 | Fitur | Deskripsi |
 |-------|-----------|
-| 📄 **Upload PDF** | Drag & drop atau pilih file PDF hingga 10MB |
-| 🤖 **AI Rangkum Otomatis** | Rangkuman terstruktur dengan poin-poin penting dalam hitungan detik |
-| 💬 **Tanya Jawab Cerdas** | Chat interaktif seputar isi dokumen yang di-upload |
-| 💾 **Simpan Riwayat** | Daftar akun gratis untuk menyimpan dokumen & riwayat chat |
-| 🔐 **Autentikasi** | Login & register dengan Supabase Auth |
+| **Upload PDF** | Drag & drop atau pilih file PDF hingga 10MB |
+| **AI Rangkum Otomatis** | Rangkuman terstruktur dengan poin-poin penting dalam hitungan detik |
+| **Tanya Jawab Cerdas** | Chat interaktif seputar isi dokumen yang di-upload |
+| **Simpan Riwayat** | Daftar akun gratis untuk menyimpan dokumen & riwayat chat |
+| **Autentikasi** | Login & register dengan Supabase Auth |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: HTML5, CSS3 (Dark Theme + Glassmorphism), Vanilla JavaScript
 - **Backend**: Node.js + Express (Vercel Serverless Functions)
@@ -27,7 +27,7 @@
 - **Database & Auth**: [Supabase](https://supabase.com)
 - **PDF Parsing**: PDF.js (client-side)
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 AI-summarize/
@@ -47,7 +47,7 @@ AI-summarize/
 └── .env                    # Environment variables (tidak di-commit)
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone Repository
 
@@ -120,7 +120,7 @@ node server.js
 
 Buka **http://localhost:3000** di browser.
 
-## 🌐 Deployment (Vercel)
+## Deployment (Vercel)
 
 1. Push project ke GitHub
 2. Import project di [vercel.com](https://vercel.com)
@@ -130,7 +130,7 @@ Buka **http://localhost:3000** di browser.
    - `SUPABASE_ANON_KEY`
 4. Deploy!
 
-## 📊 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Deskripsi |
 |--------|----------|-----------|
@@ -157,7 +157,7 @@ POST /api/chat
 }
 ```
 
-## ⚡ Groq API (Free Tier)
+## Groq API (Free Tier)
 
 | Limit | Nilai |
 |-------|-------|
@@ -166,7 +166,7 @@ POST /api/chat
 | Model | Llama 3.3 70B Versatile |
 | Biaya | **Gratis** |
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
